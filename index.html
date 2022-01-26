@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/png" href="/Artboard 2.png" />
+    <link rel="icon" type="image/png" href="Artboard 2.png" />
     <title>Sobre ruedas</title>
   </head>
   <body>
@@ -34,9 +34,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#">Lesión Medular, qué es?</a>
+            <a
+              class="nav-link"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#que_modal"
+              type="button"
+              >Lesión Medular, qué es?</a
+            >
             <a class="nav-link" href="#objetivo">Mi Objetivo</a>
-            <a class="nav-link" href="#">Como funciona?</a>
+            <a class="nav-link" href="#ComoFunciona">Como funciona?</a>
             <a
               class="nav-link"
               href="#"
@@ -160,10 +167,77 @@
               para indagar y profundizar en cada uno de los casos, todo con el
               fin de hacer que esa guía que doy hoy en día sea la adecuada.
             </p>
+            <div class="d-flex justify-content-center mt-5">
+              <img src="Mao_fam.png" alt="Mauricio familia" />
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="que_modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel">Lesión Medular</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Según la Organización Mundial de la Salud el término ”lesión
+              medular” hace referencia a los daños sufridos en la médula espinal
+              a consecuencia de un traumatismo (por ejemplo, un accidente de
+              carro) o de una enfermedad o degeneración (por ejemplo, el
+              cáncer). No existen estimaciones fiables de su prevalencia
+              mundial, pero se calcula que su incidencia mundial anual oscila
+              entre 40 y 80 casos por millón de habitantes.
+              <strong
+                >un 90% de esos casos se deben a causas traumáticas,
+              </strong>
+              aunque la proporción de lesiones medulares de origen no traumático
+              parece ir en aumento.
+            </p>
+            <br />
+            <p>
+              Los síntomas, que dependen de la gravedad de la lesión y su
+              localización en la médula espinal, pueden incluir la pérdida
+              parcial o completa de la sensibilidad o del control motor en
+              brazos o piernas e incluso en todo el cuerpo. Las lesiones
+              medulares más graves afectan a los sistemas de regulación del
+              intestino, la vejiga, la respiración, el ritmo cardíaco y la
+              tensión arterial.
+              <strong
+                >La mayoría de las personas con lesiones medulares sufren dolor
+                crónico</strong
+              >
+            </p>
+            <br />
+            <p>
+              Se estima que entre un 20% y un 30% de las personas con lesiones
+              medulares presentan signos clínicamente significativos de
+              <strong>depresión</strong>; esta, a su vez, puede repercutir
+              <strong
+                >negativamente en el funcionamiento personal y en el estado
+                general de salud de los afectados.</strong
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="whatsapp_button">
       <a
         href="https://api.whatsapp.com/send?phone=+573118413733"
@@ -226,10 +300,10 @@
       </p>
     </section>
     <section
-      id="objetivo"
+      id="ComoFunciona"
       class="d-flex flex-column justify-content-center align-items-cente"
     >
-      <h3>Como funciona?</h3>
+      <h3 class="mb-5">Como funciona?</h3>
       <p>
         <strong>Sesión de introducción</strong> con el paciente con el fin de
         saber el estado anímico, su posición ante el duelo y detalles que me
@@ -262,6 +336,13 @@
         <strong>Sesiones adicionales</strong> luego de cierto tiempo, para
         contra accionar posibles recaídas.
       </p>
+    </section>
+    <section id="contacto" class="mt-5 mb-5 d-flex justify-content-center">
+      <a
+        class="btn btn-outline-primary contact"
+        href="mailto:maochica@yahoo.com?subject=Hola!"
+        >Mandame un email con tus preguntas</a
+      >
     </section>
   </body>
   <script
