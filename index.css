@@ -10,12 +10,21 @@
   text-align: center;
 }
 
+#contacto {
+  background: rgb(178, 174, 255);
+  background: linear-gradient(
+    312deg,
+    rgba(178, 174, 255, 1) 0%,
+    rgba(0, 140, 255, 1) 100%
+  );
+}
+
 #objetivo {
   padding: 3rem 10em;
   font-size: 1.3rem;
 }
 
-#ComoFunciona{
+#ComoFunciona {
   padding: 3rem 10em;
   font-size: 1.3rem;
 }
@@ -45,6 +54,10 @@ br {
   align-self: flex-end;
 }
 
+.form-width{
+  width: 50%;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1rem;
@@ -56,31 +69,42 @@ img {
   border-radius: 5%;
 }
 
-.titleMau{
+.titleMau {
   text-align: left;
 }
 
-
-
 .modal-header {
-
-    border-bottom: 0px solid #dee2e6;
+  border-bottom: 0px solid #dee2e6;
 }
 
-.contact{width: 400px;}
+.contact {
+  width: 400px;
+}
 
-@media only screen and (max-width: 850px)  {
-  .hideSmall{
+@media only screen and (max-width: 850px) {
+  .hideSmall {
     display: none;
   }
 
   #objetivo {
     padding: 3rem 1em;
     font-size: 1rem;
-}
+  }
 
-#ComoFunciona {
-  padding: 5rem 1em;
-  font-size: 1rem;
+  #ComoFunciona {
+    padding: 5rem 1em;
+    font-size: 1rem;
+  }
+  .titleMau {
+    margin-right: 3rem;
 }
+.form-width{
+  width: 90%;
+}
+}
+@media only screen and (min-width: 851px)  {
+
+  .hideBig {
+    display: none;
+  }
 }

@@ -252,6 +252,7 @@
       <div class="d-flex align-items-center">
         <img class="hideSmall" src="top.jpg" alt="foto de mauricio" width="450" />
         <div class="ms-5 titleMau">
+          <img class="hideBig mb-5" src="miniTop.png" alt="foto de mauricio" width="200" />
           <h1>Mauricio Chica Vásquez</h1>
           <h3>Coach de Vida especialista en Lesión Medular</h3>
         </div>
@@ -337,13 +338,24 @@
         contra accionar posibles recaídas.
       </p>
     </section>
-    <section id="contacto" class="mt-5 mb-5 d-flex justify-content-center">
-      <a
+    <section id="contacto" class="mt-5 pb-5 pt-5 d-flex justify-content-center">
+      <!-- <a
         class="btn btn-outline-primary contact"
         href="mailto:maochica@yahoo.com?subject=Hola!"
         target="_blank"
         >Mandame un e-mail con tus preguntas</a
-      >
+      > -->
+      <form action="https://formsubmit.co/maochica@yahoo.com" method="POST" class="form-width">
+        <h4>Contactate conmigo!</h4>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Tu Correo</label>
+          <input type="email" name="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
+          <input type="hidden" name="_subject" value="Nuevo correo de la pagina">
+          <label for="exampleFormControlInput2">Tu Mensaje</label>
+          <textarea type="text" name="message"  class="form-control" id="exampleFormControlInput2" placeholder="Escribe tu mensaje" required rows="5"></textarea>
+          <button type="submit" class="btn btn-primary mb-2 mt-5">Enviar</button>
+        </div>
+      </form>
     </section>
   </body>
   <script
