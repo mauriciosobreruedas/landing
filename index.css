@@ -68,3 +68,19 @@ img {
 }
 
 .contact{width: 400px;}
+
+@media only screen and (max-width: 850px)  {
+  .hideSmall{
+    display: none;
+  }
+
+  #objetivo {
+    padding: 3rem 1em;
+    font-size: 1rem;
+}
+
+#ComoFunciona {
+  padding: 5rem 1em;
+  font-size: 1rem;
+}
+}
